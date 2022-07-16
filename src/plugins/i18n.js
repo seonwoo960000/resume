@@ -12,8 +12,8 @@ const messages = {
         subtitle: "SOFTWARE ENGINEER",
         description: "Hello. " +
                      "I'm a backend engineer who fell in love with developing things that can help people. " +
-                     "I develop web applications on both the backend and frontend. " +
-                     "I'm also obsessed with clean code and database performance tuning."
+                     "I develop web applications on both the backend and the frontend. " +
+                     "I'm obsessed with clean code and database performance tuning."
       },
       experience: {
         second: {
@@ -21,21 +21,21 @@ const messages = {
           'title-2': "Software Engineer",
           subtitle: "(2022 ~ Current)",
           description: "I'm working on a platform to provide billing services for advertisers who use LINE ads. " +
-                       "I make apps that provide services such as creating billing accounts, make payments, make invoices and settlements."
+                       "I make apps that provide services such as creating billing accounts, making payments, invoices and settlements."
         },
         first: {
           title: "Pilot",
           subtitle: "(2015 ~ 2021)",
-          description: "I've experience of 200 hours of professional flight training. " +
-                       "I have commercial pilot license and private pilot license. " +
-                       "Even though I'm working as a software engineer, I often reminisce on my experience of flying in the blue sky."
+          description: "I've experienced 200 hours of professional flight training. " +
+                       "I have private, instrumental and commercial pilot license. " +
+                       "Even though I'm working as a software engineer, I often reminisce on the days that I flew through the clouds."
         },
       },
       projects: {
         onuMenu: {
-          title: "Online Menu platform",
+          title: "Online Menu Platform",
           functions: {
-            title: "What can you do with this app",
+            title: "What you can do with this app",
             f1: "Register business information",
             f2: "Register stories",
             f3: "Register menus",
@@ -49,11 +49,11 @@ const messages = {
           },
           links: {
             l1: "View registered businesses",
-            l2: "Register business"
+            l2: "Register a business"
           }
         },
         notToDoList: {
-          title: "Easy to use TO DO app used to record something YOU DON'T WANT TO DO !!",
+          title: "Easy to use TO DO app for recording something YOU DON'T WANT TO DO !!",
           functions: {
             title: "What can you do with this app",
             f1: "CRUD boards",
@@ -96,7 +96,7 @@ const messages = {
       },
       projects: {
         onuMenu: {
-          title: "Online Menu platform",
+          title: "Online Menu Platform",
           functions: {
             title: "기능 목록",
             f1: "매장 정보 등록",

@@ -19,7 +19,7 @@
           {{ $t("message.experience.second.description") }}
         </v-col>
       </v-row>
-      <v-row class="row-style">
+      <v-row class="row-style last-row-style">
         <v-col cols="4"
                class="title-box-style">
           <div data-aos="fade-right">
@@ -48,6 +48,10 @@ export default {
 .row-style {
   padding: 20px;
   border-top: dotted;
+}
+
+.last-row-style {
+  border-bottom: dotted;
 }
 
 .experience-title-style {

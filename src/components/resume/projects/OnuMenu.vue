@@ -2,6 +2,7 @@
   <v-row>
     <v-col :cols="$vuetify.breakpoint.mdAndUp ? 4 : 12"
            class="vertical-center horizontal-center"
+           data-aos-anchor-placement="top-center"
            data-aos="fade-right">
       <div>
         <div class="title-style">ONU MENU</div>

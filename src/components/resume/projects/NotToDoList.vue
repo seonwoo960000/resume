@@ -1,6 +1,7 @@
 <template>
   <v-row>
     <v-col :cols="$vuetify.breakpoint.mdAndUp ? 4 : 12"
+           data-aos-anchor-placement="top-center"
            data-aos="fade-right">
       <div class="title-style">NOT TO DO LIST</div>
       <v-img

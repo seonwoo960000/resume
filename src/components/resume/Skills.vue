@@ -1,7 +1,11 @@
 <template>
-  <div class="center">
+  <div ref="ref_skills" class="center">
     <div>
-      <div class="title-style" data-aos="fade-down">USED SKILLS</div>
+      <div class="title-style"
+           data-aos="fade-down">
+        USED SKILLS
+      </div>
+      <intersection-observer @intersection-observed="scroll" />
       <div class="center">
         <v-row class="row-style">
           <v-col sm="6" md="4"
@@ -37,8 +41,13 @@
 
 <script>
 
+import IntersectionObserver from "@/components/utils/IntersectionObserver";
+
 export default {
   name: "Skills",
+  components: {
+    'intersection-observer': IntersectionObserver
+  },
   data: () => ({
     svgs: [
       {name: 'java', icon: '$vuetify.icons.values.java', details: ['java 8', 'Object Oriented Programming', 'Functional Programming', 'Design Patterns']},
@@ -48,7 +57,20 @@ export default {
       {name: 'kafka', icon: '$vuetify.icons.values.kafka', details: ['Kafka with Spring']},
       {name: 'elastic search', icon: '$vuetify.icons.values.elasticSearch', details: ['Monitoring with ELK stack and Zipkin']}
     ],
+    scrolled: false
   }),
+  methods: {
+    scroll() {
+      if (this.scrolled) {
+        return
+      }
+      this.scrolled = true
+      window.scrollTo({
+        behavior: 'smooth',
+        top: this.$refs.ref_skills.getBoundingClientRect().top + window.scrollY
+      })
+    }
+  }
 }
 </script>
 

@@ -1,9 +1,10 @@
 <template>
-  <div class="center">
+  <div ref="ref_experience" class="center">
     <div>
-      <v-row class="experience-title-style">
+      <v-row ref="title_experience" class="experience-title-style">
         <div data-aos="fade-down">EXPERIENCE</div>
       </v-row>
+      <intersection-observer @intersection-observed="scroll"/>
       <v-row class="row-style">
         <v-col cols="4"
                class="title-box-style">
@@ -38,8 +39,26 @@
 </template>
 
 <script>
+import IntersectionObserver from "@/components/utils/IntersectionObserver";
+
 export default {
-  name: "Experience"
+  name: "Experience",
+  components: {
+    'intersection-observer': IntersectionObserver
+  },
+  data: () => ({
+    scrolled: false
+  }),
+  methods: {
+    scroll() {
+      if (this.scrolled) return
+      this.scrolled = true
+      window.scrollTo({
+        behavior: 'smooth',
+        top: this.$refs.ref_experience.getBoundingClientRect().top + window.scrollY
+      })
+    }
+  }
 }
 </script>
 

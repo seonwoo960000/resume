@@ -1,12 +1,12 @@
 <template>
   <div>
     <locale />
-    <introduction class=" dark-background-color" :class="$vuetify.breakpoint.mdAndUp ? 'partial-height' : 'full-height'" />
-    <experience class=" light-background-color" :class="$vuetify.breakpoint.mdAndUp ? 'partial-height' : 'full-height'" />
-    <works class=" dark-background-color" :class="$vuetify.breakpoint.mdAndUp ? 'partial-height' : 'full-height'"/>
-    <projects class=" light-background-color" :class="$vuetify.breakpoint.mdAndUp ? 'partial-height' : 'full-height'"/>
-    <skills class=" dark-background-color" :class="$vuetify.breakpoint.mdAndUp ? 'partial-height' : 'full-height'"/>
-    <books class=" light-background-color" :class="$vuetify.breakpoint.mdAndUp ? 'partial-height' : 'full-height'"/>
+    <introduction class="dark-background-color full-height" />
+    <experience class="light-background-color full-height" />
+    <works class="dark-background-color full-height"/>
+    <projects class="light-background-color full-height"/>
+    <skills class="dark-background-color full-height"/>
+    <books class="light-background-color full-height"/>
   </div>
 </template>
 
